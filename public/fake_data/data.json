@@ -1,0 +1,74 @@
+[
+  {
+    "ID": 101,
+    "CourseName": "Introduction to Programming",
+    "Credit": 3,
+    "Price": 299.99,
+    "Details": "This course covers the basics of programming, including Python, Java, and C++. Suitable for beginners.",
+    "ImageURL": "https://i.ibb.co/KWTsw8z/Rectangle-3.png"
+  },
+  {
+    "ID": 102,
+    "CourseName": "Data Science Fundamentals",
+    "Credit": 4,
+    "Price": 449.99,
+    "Details": "Dive into the world of data science with this comprehensive course. Learn about data analysis, machine learning, and more.",
+    "ImageURL": "https://i.ibb.co/dkm657V/Rectangle-3-1.png"
+  },
+  {
+    "ID": 103,
+    "CourseName": "Web Development Bootcamp",
+    "Credit": 5,
+    "Price": 599.99,
+    "Details": "Become a proficient web developer in just a few weeks. Topics include HTML, CSS, JavaScript, and more.",
+    "ImageURL": "https://i.ibb.co/RyzVF3S/Rectangle-2-6.png"
+  },
+  {
+    "ID": 104,
+    "CourseName": "Digital Marketing Mastery",
+    "Credit": 3,
+    "Price": 349.99,
+    "Details": "Unlock the secrets of digital marketing, including SEO, social media, and email marketing.",
+    "ImageURL": "https://i.ibb.co/Hqj8LcR/Rectangle-2-5.png"
+  },
+  {
+    "ID": 105,
+    "CourseName": "Graphic Design Essentials",
+    "Credit": 2,
+    "Price": 249.99,
+    "Details": "Learn the fundamentals of graphic design, including Adobe Photoshop and Illustrator.",
+    "ImageURL": "https://i.ibb.co/3Cvh8kJ/Rectangle-2.png"
+  },
+  {
+    "ID": 106,
+    "CourseName": "Business Finance 101",
+    "Credit": 3,
+    "Price": 349.99,
+    "Details": "Understand the principles of finance and budgeting for business success.",
+    "ImageURL": "https://i.ibb.co/Sxz8Hvr/Rectangle-2-1.png"
+  },
+  {
+    "ID": 107,
+    "CourseName": "Advanced Photography Techniques",
+    "Credit": 2,
+    "Price": 249.99,
+    "Details": "Enhance your photography skills with advanced techniques and equipment.",
+    "ImageURL": "https://i.ibb.co/L95Pt6C/Rectangle-2-4.png"
+  },
+  {
+    "ID": 108,
+    "CourseName": "Culinary Arts Masterclass",
+    "Credit": 4,
+    "Price": 499.99,
+    "Details": "Master the art of cooking with this comprehensive culinary course.",
+    "ImageURL": "https://i.ibb.co/wcRL5vt/Rectangle-2-3.png"
+  },
+  {
+    "ID": 109,
+    "CourseName": "Yoga and Meditation for Stress Relief",
+    "Credit": 1,
+    "Price": 99.99,
+    "Details": "Discover the benefits of yoga and meditation in managing stress and improving overall well-being.",
+    "ImageURL": "https://i.ibb.co/bJGSNwT/Rectangle-2-2.png"
+  }
+]
