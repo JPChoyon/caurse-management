@@ -1,10 +1,20 @@
 import "./App.css";
+import Blogs from "./Component/Blogs/Blogs";
+import Bookmarks from "./Component/Bookmarks/Bookmarks";
 
 function App() {
   return (
-    <>
-      <h1>Vite + React</h1> 
-    </>
+    <div>
+      <header>
+        <h1 className="font-black text-center text-4xl border-b-2 p-2">
+          Course Registration
+        </h1>
+      </header>
+      <main className="md:flex mt-5">
+        <Blogs></Blogs>
+        <Bookmarks></Bookmarks>
+      </main>
+    </div>
   );
 }
 
