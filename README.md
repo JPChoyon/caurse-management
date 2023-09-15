@@ -1,7 +1,8 @@
 # Add at least 3 Project features
 
-“_”Cannot add more than one course “_”Add To Cart Course Feature “\*”If more
-than one course is added, it will give a nice alert
+- Cannot add more than one course
+- Add To Cart Course Feature
+- If more than one course is added, it will give a nice alert
 
 # Discuss how you managed the state in your assignment project.
 
