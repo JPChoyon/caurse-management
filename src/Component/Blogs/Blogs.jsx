@@ -9,6 +9,7 @@ const Blogs = () => {
   const [caurse, setCaurse] = useState([]);
   const [remain, setRemain] = useState(20);
   const [totall, setTotall] = useState(0);
+  const [totallCost, setTotallCost] = useState(0);
 
   useEffect(() => {
     fetch("../../../public/fake_data/data.json")
@@ -19,19 +20,23 @@ const Blogs = () => {
   const handleClick = (blog) => {
     const isExist = caurse.find((item) => item.ID == blog.ID);
     let count = blog.Credit;
+    let cost = blog.Price;
     if (isExist) {
       return alert("already you added this prodact");
     } else {
       caurse.forEach((item) => {
         count = count + item.Credit;
+        cost = cost + item.Price;
       });
       const totalRemaining = 20 - count;
+      const totall = cost;
       if (count > 20) {
         alert("you cannot add greater than 20 hour");
       } else {
         setRemain(totalRemaining);
         setCaurse([...caurse, blog]);
         setTotall(count);
+        setTotallCost(totall);
       }
     }
   };
@@ -83,7 +88,12 @@ const Blogs = () => {
         </div>
       </div>
       <div>
-        <Bookmarks caurse={caurse} remain={remain} totall={totall}></Bookmarks>
+        <Bookmarks
+          caurse={caurse}
+          remain={remain}
+          totall={totall}
+          totallCost={totallCost}
+        ></Bookmarks>
       </div>
     </div>
   );

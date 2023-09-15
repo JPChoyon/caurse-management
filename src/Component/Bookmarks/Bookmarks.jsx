@@ -1,6 +1,6 @@
 import "./bookmarks.css";
 
-const Bookmarks = ({ caurse, totall, remain }) => {
+const Bookmarks = ({ caurse, totall, remain, totallCost }) => {
   // console.log(caurse);
   return (
     <div className="text-left bg-white rounded px-4">
@@ -20,6 +20,7 @@ const Bookmarks = ({ caurse, totall, remain }) => {
       <div className="border-b-2 py-2">
         <h3 className="font-medium">Total Credit Hour : {totall}</h3>
       </div>
+      <div className="py-2">Total Price : {totallCost} USD</div>
     </div>
   );
 };
