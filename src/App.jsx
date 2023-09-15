@@ -10,9 +10,9 @@ function App() {
           Course Registration
         </h1>
       </header>
-      <main className="md:flex mt-5">
+      <main >
         <Blogs></Blogs>
-        <Bookmarks></Bookmarks>
+        {/* <Bookmarks></Bookmarks> */}
       </main>
     </div>
   );
