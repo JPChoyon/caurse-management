@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Bookmarks from "../Bookmarks/Bookmarks";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
@@ -82,7 +80,6 @@ const Blogs = () => {
                   </button>
                 </div>
               </div>
-              {/* <ToastContainer /> */}
             </div>
           ))}
         </div>

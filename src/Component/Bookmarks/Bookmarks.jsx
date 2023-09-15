@@ -18,9 +18,9 @@ const Bookmarks = ({ caurse, totall, remain, totallCost }) => {
         ))}
       </div>
       <div className="border-b-2 py-2">
-        <h3 className="font-medium">Total Credit Hour : {totall}</h3>
+        <h3 className="font-semibold">Total Credit Hour : {totall}</h3>
       </div>
-      <div className="py-2">Total Price : {totallCost} USD</div>
+      <div className="py-2 font-semibold">Total Price : {totallCost} USD</div>
     </div>
   );
 };
