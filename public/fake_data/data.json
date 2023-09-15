@@ -18,7 +18,7 @@
   {
     "ID": 103,
     "CourseName": "Web Development Bootcamp",
-    "Credit": 5,
+    "Credit": 10,
     "Price": 599.99,
     "Details": "Dive into the world of data science with this comprehensive course. Learn about data analysis, machine learning, and more.",
     "ImageURL": "https://i.ibb.co/RyzVF3S/Rectangle-2-6.png"
@@ -34,7 +34,7 @@
   {
     "ID": 105,
     "CourseName": "Graphic Design Essentials",
-    "Credit": 2,
+    "Credit": 5,
     "Price": 249.99,
     "Details": "Dive into the world of data science with this comprehensive course. Learn about data analysis, machine learning, and more.",
     "ImageURL": "https://i.ibb.co/3Cvh8kJ/Rectangle-2.png"

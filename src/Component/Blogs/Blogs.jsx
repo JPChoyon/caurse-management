@@ -1,10 +1,14 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import Bookmarks from "../Bookmarks/Bookmarks";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
   const [caurse, setCaurse] = useState([]);
+  const [remain, setRemain] = useState(20);
+  const [totall, setTotall] = useState(0);
 
   useEffect(() => {
     fetch("../../../public/fake_data/data.json")
@@ -12,8 +16,24 @@ const Blogs = () => {
       .then((data) => setBlogs(data));
   }, []);
 
-  const handleClick = (blogs) => {
-    setCaurse([...caurse, blogs]);
+  const handleClick = (blog) => {
+    const isExist = caurse.find((item) => item.ID == blog.ID);
+    let count = blog.Credit;
+    if (isExist) {
+      return alert("already you added this prodact");
+    } else {
+      caurse.forEach((item) => {
+        count = count + item.Credit;
+      });
+      const totalRemaining = 20 - count;
+      if (count > 20) {
+        alert("you cannot add greater than 20 hour");
+      } else {
+        setRemain(totalRemaining);
+        setCaurse([...caurse, blog]);
+        setTotall(count);
+      }
+    }
   };
 
   return (
@@ -57,12 +77,13 @@ const Blogs = () => {
                   </button>
                 </div>
               </div>
+              {/* <ToastContainer /> */}
             </div>
           ))}
         </div>
       </div>
       <div>
-        <Bookmarks caurse={caurse}></Bookmarks>
+        <Bookmarks caurse={caurse} remain={remain} totall={totall}></Bookmarks>
       </div>
     </div>
   );
