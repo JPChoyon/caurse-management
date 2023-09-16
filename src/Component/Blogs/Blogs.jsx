@@ -10,7 +10,7 @@ const Blogs = () => {
   const [totallCost, setTotallCost] = useState(0);
 
   useEffect(() => {
-    fetch("../../../public/fake_data/data.json")
+    fetch("./data.json")
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
@@ -63,17 +63,11 @@ const Blogs = () => {
                 </p>
                 <div className="flex justify-around py-2">
                   <div className="flex ">
-                    <img
-                      src="../../../public/images/dollar-sign 1.svg"
-                      alt="dollar icon"
-                    />
+                    <img src="./images/dollar-sign 1.svg" alt="dollar icon" />
                     Price : {blogs.Price}
                   </div>
                   <div className="flex">
-                    <img
-                      src="../../../public/images/Frame.svg"
-                      alt="bookmark icon"
-                    />
+                    <img src="./images/Frame.svg" alt="bookmark icon" />
                     Credit : {blogs.Credit} hr
                   </div>
                 </div>
