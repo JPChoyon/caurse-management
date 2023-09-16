@@ -20,7 +20,10 @@ const Blogs = () => {
     let count = blog.Credit;
     let cost = blog.Price;
     if (isExist) {
-      return alert("already you added this prodact");
+      Swal.fire({
+        icon: "error",
+        title: "You already added this Caurse!",
+      });
     } else {
       caurse.forEach((item) => {
         count = count + item.Credit;
@@ -29,7 +32,10 @@ const Blogs = () => {
       const totalRemaining = 20 - count;
       const totall = cost;
       if (count > 20) {
-        alert("you cannot add greater than 20 hour");
+        Swal.fire({
+          icon: "warning",
+          title: "You cannot add more than 20 hour",
+        });
       } else {
         setRemain(totalRemaining);
         setCaurse([...caurse, blog]);
